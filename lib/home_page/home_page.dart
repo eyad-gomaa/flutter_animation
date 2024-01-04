@@ -7,6 +7,7 @@ import '../pages/animated_opacity.dart';
 import '../pages/animated_padding.dart';
 import '../pages/animated_physical_model.dart';
 import '../pages/animated_positioned_directional.dart';
+import '../pages/animated_switcher.dart';
 import '../pages/animated_text_style.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -79,6 +80,18 @@ class MyHomePage extends StatelessWidget {
                         context, MaterialPageRoute(
                         builder: (context) => const AnimatedCrossFadePage()));
                   }, child: const Text("Animated Cross Fade")),
+              ElevatedButton(
+                  onPressed: (){
+                    Navigator.push(
+                        context, MaterialPageRoute(
+                        builder: (context) => const AnimatedSwitcherPage()));
+                  }, child: const Text("Animated Switcher")),
+              ElevatedButton(
+                  onPressed: (){
+                    Navigator.push(
+                        context, MaterialPageRoute(
+                        builder: (context) => const AnimatedSwitcherPage()));
+                  }, child: const Text("Animated Switcher")),
             ],
           ),
         ),
