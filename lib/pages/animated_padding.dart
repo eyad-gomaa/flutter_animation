@@ -10,7 +10,7 @@ class AnimatedPaddingPage extends StatefulWidget {
 class _AnimatedPaddingPageState extends State<AnimatedPaddingPage> {
   List<String> _characters = ["jerry","tom","cheese","dog"];
   bool addPadding = false;
-  double _padding = 10;
+  double _padding = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +29,7 @@ class _AnimatedPaddingPageState extends State<AnimatedPaddingPage> {
         child: Icon(addPadding ? Icons.expand : Icons.expand_less),
         onPressed: () {
           setState(() {
-            addPadding ? _padding = 10 : _padding = 30;
+            addPadding ? _padding = 0 : _padding = 30;
             addPadding = !addPadding;
           });
         },),

@@ -1,8 +1,10 @@
+import 'package:animation/pages/animated_positioned.dart';
 import 'package:flutter/material.dart';
 import '../pages/animated_align.dart';
 import '../pages/animated_container.dart';
 import '../pages/animated_opacity.dart';
 import '../pages/animated_padding.dart';
+import '../pages/animated_physical_model.dart';
 import '../pages/animated_text_style.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -44,12 +46,25 @@ class MyHomePage extends StatelessWidget {
                     Navigator.push(
                         context, MaterialPageRoute(
                         builder: (context) => const AnimatedOpacityPage()));
-                  }, child: const Text("Animated Opacity")),ElevatedButton(
+                  }, child: const Text("Animated Opacity")),
+              ElevatedButton(
                   onPressed: (){
                     Navigator.push(
                         context, MaterialPageRoute(
                         builder: (context) => const AnimatedPaddingPage()));
                   }, child: const Text("Animated Padding")),
+              ElevatedButton(
+                  onPressed: (){
+                    Navigator.push(
+                        context, MaterialPageRoute(
+                        builder: (context) => const AnimatedPhysicalModelPage()));
+                  }, child: const Text("Animated Physical ModelPag")),
+              ElevatedButton(
+                  onPressed: (){
+                    Navigator.push(
+                        context, MaterialPageRoute(
+                        builder: (context) => const AnimatedPositionedPage()));
+                  }, child: const Text("Animated Positioned")),
             ],
           ),
         ),
