@@ -41,17 +41,12 @@ class _AnimatedTextStylePageState extends State<AnimatedTextStylePage> {
                 setState(() {
                   _fontSize -=5;
                 });
-              }, icon: Icon(Icons.minimize))
+              }, icon: Icon(Icons.remove))
             ],
           )
 
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.animation),
-        onPressed: () {
-
-        },),
     );
   }
 }
