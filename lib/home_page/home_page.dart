@@ -2,9 +2,11 @@ import 'package:animation/pages/animated_positioned.dart';
 import 'package:flutter/material.dart';
 import '../pages/animated_align.dart';
 import '../pages/animated_container.dart';
+import '../pages/animated_cross_fade.dart';
 import '../pages/animated_opacity.dart';
 import '../pages/animated_padding.dart';
 import '../pages/animated_physical_model.dart';
+import '../pages/animated_positioned_directional.dart';
 import '../pages/animated_text_style.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -65,6 +67,18 @@ class MyHomePage extends StatelessWidget {
                         context, MaterialPageRoute(
                         builder: (context) => const AnimatedPositionedPage()));
                   }, child: const Text("Animated Positioned")),
+              ElevatedButton(
+                  onPressed: (){
+                    Navigator.push(
+                        context, MaterialPageRoute(
+                        builder: (context) => const AnimatedPositionedDirectionalPage()));
+                  }, child: const Text("Animated Positioned Directional")),
+              ElevatedButton(
+                  onPressed: (){
+                    Navigator.push(
+                        context, MaterialPageRoute(
+                        builder: (context) => const AnimatedCrossFadePage()));
+                  }, child: const Text("Animated Cross Fade")),
             ],
           ),
         ),
